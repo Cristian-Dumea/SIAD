@@ -37,8 +37,6 @@
 
 # problema 2
 
-str_text = "Ana are un rotator cu capac "
-
 
 def check_palindrome(str_palindrome):
     int_len = len(str_palindrome) - 1
@@ -62,6 +60,12 @@ def find_palindromes(str_phrase):
     return dict_palindromes, list_palindromes
 
 
-dict_result, list_result = find_palindromes(str_text)
-print(dict_result)
-print(list_result)
+def main():
+    str_text = "Ana are un rotator cu capac "
+    dict_result, list_result = find_palindromes(str_text)
+    print(dict_result)
+    print(list_result)
+
+
+if __name__ == "__main__":
+    main()
